@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "glycopulse"
+version = "1.0.0"
+authors = [
+  { name="MUHAMMED AFLAH S", email="ra2411026050147@srmist.edu.in" },
+]
+description = "Multi-Task Deep Learning for Type 2 Diabetes Stratification, Microvascular Complications, and Counterfactual Recourse"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "torch>=2.0.0",
+    "numpy>=1.22.0",
+    "scipy>=1.9.0",
+    "pandas>=1.4.0",
+    "scikit-learn>=1.1.0",
+    "fastapi>=0.95.0",
+    "uvicorn>=0.20.0",
+    "pydantic>=1.10.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0.0"]
